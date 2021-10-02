@@ -1,0 +1,647 @@
+\documentclass[10pt]{article}
+
+%---------------------------------------------------------
+% Personal data
+%---------------------------------------------------------
+\newcommand{\me}{Aaron David Stump}
+\newcommand{\dept}{Computer Science}
+\newcommand{\address}{14 MacLean Hall}
+\newcommand{\phone}{(319) 384-0093}
+\newcommand{\email}{\url{aaron-stump@uiowa.edu}}
+\newcommand{\web}{\url{http://www.cs.uiowa.edu/~astump}}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% CV Dates
+%---------------------------------------------------------
+\newcommand{\fromdate}{August 2018}
+\newcommand{\todate}{August 2021}
+\newcommand{\cvdate}{\fromdate\ -- \todate}
+\newcommand{\currdate}{\today}
+%---------------------------------------------------------
+
+\input{macros}
+
+%% Comment this out if you do not want the new stuff to be in red
+\renewcommand{\new}[1]{\textcolor{red}{#1}}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%%% Comment one or the other commands below depending on 
+%%% where you want to include Iowa-specific info or not
+\toggletrue{internal}
+%\togglefalse{internal}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\iftoggle{internal}{
+ \includeversion{IOWA ONLY}
+ \renewcommand{\iowa}[1]{#1}
+ % The commands below are to be used in bibtex files in entry of the form:
+ % options = {contrib=\equalc},
+ \newcommand{\majorc} {*\ }
+ \newcommand{\secondc}{**\ }
+ \newcommand{\equalc} {***\ }
+ \newcommand{\minorc} {****\ }
+}{
+ \excludeversion{IOWA ONLY}
+ \renewcommand{\iowa}[1]{}
+ \newcommand{\majorc} {}
+ \newcommand{\secondc}{}
+ \newcommand{\equalc} {}
+ \newcommand{\minorc} {}
+}
+
+
+%% Add bibtex files here, must include the .bib suffix
+\addbibresource{AaronStump.bib}
+
+% This causes the generation of all the entries in sample.bib.
+\nocite{*}
+
+
+%-----------------------------------------
+% Setting headings
+%-----------------------------------------
+\lhead{\sl Curriculum Vitae}
+\rhead{\sl \me}
+%\lfoot{\sl \today}
+\lfoot{\sl \cvdate}
+\cfoot{}
+\rfoot{\rm\thepage}
+\pagestyle{fancy}
+%-----------------------------------------
+
+
+
+\begin{document}
+\thispagestyle{empty}
+
+%-----------------------------------------
+% Title section
+%-----------------------------------------
+\title{CURRICULUM VITAE}
+\author{
+{\Large\textbf \me} \\[1.3ex]
+{\textbf \dept}
+}
+\date{\cvdate}
+\maketitle
+%-----------------------------------------
+
+%-----------------------------------------
+% Address section
+%-----------------------------------------
+\noindent\rule{\textwidth}{1pt}
+\begin{center}
+\large
+\begin{tabular}{lcr}
+\begin{tabular}{l}
+\address \\
+The University of Iowa \\
+Iowa City, Iowa 52242
+\end{tabular}
+& \hspace{4.3em} &
+\begin{tabular}{l}
+{phone:} \phone	\\
+{email:} {\small \email} \\ 
+{web:} {\small \web} \\
+\end{tabular}
+\end{tabular}
+\end{center}
+%-----------------------------------------
+
+
+%=====================
+\section*{\education}
+%=====================
+
+
+%------------------------------
+\subsection*{Higher Education}
+%------------------------------
+\smallskip
+
+\quad
+\begin{tabular}{l@{\quad\ }l}
+ 2002
+ & {\bf Phd}, Computer Science, Stanford University \\
+ & {\bf Thesis:} Checking Validities and Proofs with CVC and flea
+ \\[.5ex]
+ 1997
+ & {\bf BS}, Computer Science, Philosophy, Cornell University \\
+ & \ 
+ \\[.5ex]
+\end{tabular}
+
+
+%-------------------------------------------------
+\subsection*{Professional and Academic Positions}
+%-------------------------------------------------
+\smallskip
+
+\quad
+\begin{tabular}{l@{\quad\ }p{35em}}
+ 2014 -- present
+ & {\bf Professor}, Department of Computer Science, 
+   The University of Iowa
+ \\[3.5ex]
+ 2008 -- 2014
+ & {\bf Associate Professor}, Department of Computer Science, 
+   The University of Iowa
+ \\[3.5ex]
+ 2002 -- 2008
+ & {\bf Assistant Professor}, Department of Computer Science and Engineering, 
+   Washington University in St. Louis
+ \\[3.5ex]
+\end{tabular}
+
+
+
+%-------------------------------
+\subsection*{Honors and Awards}
+%-------------------------------
+\smallskip
+
+\quad
+\begin{tabular}{l@{\quad\ }l}
+ 2021
+ & {\bf Test of Time award}, Logic in Computer Science (LICS) conference, for the \\
+ \ & 2001 paper ``A Decision Procedure for an Extensional Theory of Arrays'', with three coauthors.
+ \\[.5ex]
+ 2021
+ & {\bf Conference award}, Computer-Aided Verification (CAV), ``for pioneering contributions \\
+ \ & to the foundations of the theory and practice of satisfiability modulo theories (SMT),'' with \\
+ \ & twenty others.
+ \\[.5ex]
+\end{tabular}
+
+
+%-------------------------
+\subsection*{Memberships}
+%-------------------------
+\smallskip
+
+\quad
+\begin{tabular}{l@{\quad\ }l}
+ 2004 -- present
+ & Association for Computing Machinery (ACM)
+ \\[.5ex]
+\end{tabular}
+
+
+% The entire section below is ignored 
+% when the toggle 'internal' is set to false
+\iowa{
+%===========================
+\section*{\teaching}
+%===========================
+}
+\begin{IOWA ONLY}
+
+%------------------------------------------------------
+\subsection*{Courses Taught at the University of Iowa}
+%------------------------------------------------------
+\smallskip
+
+\begin{tabular}{| l | l | p{15em} | c | c |}
+ \hline
+ {\bf Term} & {\bf Course \#} & {\bf Title} & {\bf Ten-day}    & {\bf Final} \\ 
+            &                 &             & {\bf Enroll.} & {\bf Enroll.} \\ 
+ \hline
+ \hline
+ Spring 2021
+ & CS:3820:0001 & Programming Language Concepts
+ & \  & 83
+ \\
+ \hline
+ Fall 2020
+ & CS:5860:0001 & Lambda Calculus and Applications
+ & \  & 13
+ \\
+ \hline
+ Spring 2020
+ & CS:3820:0001 & Programming Language Concepts
+ & \  & 83
+ \\
+ \hline
+ Spring 2019
+ & CS:5850:0001  & Programming Language Foundations
+ & \  & 11
+ \\
+ \hline
+ Spring 2019
+ & CS:3820:0001 & Programming Language Concepts
+ & \  & 56
+ \\
+ \hline
+\end{tabular}
+\smallskip
+
+
+%---------------------------------------
+\subsection*{Student Mentoring Summary}
+%---------------------------------------
+\smallskip
+
+% this is typically for advising of undergrads
+\begin{tabular}{l@{\quad\ }p{35em}} 
+ Fall 2018 -- Spring 2020
+ & Undergraduate Advisor, \# Students: 25/semester (approx.)
+ \\[.5ex]
+ Fall 2020 -- Spring 2021
+ & MCS Advisor, \# Students: 25 (approx.)
+ \\[.5ex]
+\end{tabular}
+
+%-------------------------------
+\subsection*{Student Mentoring}
+%-------------------------------
+\smallskip
+
+\begin{itemize}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\item[] \textbf{PhD --- Advisor}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\\[1.3ex]
+\begin{tabular}{l@{\quad\ }p{30em}} 
+ Fall 2012 -- Summer 2019
+ & {\bf Lazy Exact Real Arithmetic Using Floating Point Operations}, McCleeary, Ryan; successfully defended
+ \\[.5ex]
+ Fall 2017 -- present
+ & Jenkins, Christopher; dissertation proposal expected Fall 2021
+ \\[.5ex]
+ Fall 2017 -- present
+ & Cantor, Anthony; dissertation proposal expected Fall 2021
+ \\[.5ex]
+ Fall 2018 -- present
+ & Marmaduke, Andrew; comprehensive exam planned for Fall 2021
+ \\[.5ex]
+ Fall 2019 -- present
+ & Hubers, Alex; qualifying exam planned for Spring 2021
+ \\[.5ex]
+\end{tabular}
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\item[] \textbf{PhD --- Committee Member}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\\[1.3ex]
+\begin{tabular}{l@{\quad\ }p{30em}} 
+ 2019 -- 2020
+ & Inamdar, Tanmay; successfully defended
+ \\[.5ex]
+ 2019 -- 2019
+ & Riaz, Talal; succesfully defended
+ \\[.5ex]
+ 2018 -- 2019
+ & Meng, Baoluo; succesfully defended
+ \\[.5ex]
+\end{tabular}
+
+\end{itemize}
+
+\pagebreak
+%------------------------------------
+\subsection*{Professional Mentoring}
+%------------------------------------
+\smallskip
+
+\begin{itemize}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\item[] \textbf{Postdoctoral Researcher}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\\[1.3ex]
+\begin{tabular}{l@{\quad\ }p{30em}} 
+ January 2017 -- December 2018
+ & Firsov, Denis
+ \\[3.5ex]
+  October 2017 -- September 2018
+ & Copello, Ernesto
+ \\[3.5ex]
+ June 2017 -- March 2019
+ & Diehl, Larry
+ \\[3.5ex]
+ June 2019 -- November 2020
+ & Spahn, Stephan
+ \\[3.5ex]
+\end{tabular}
+
+\end{itemize}
+
+\end{IOWA ONLY}
+
+
+%======================
+\section*{\scholarship}
+%======================
+
+% The legend below appears only when the toggle 'internal' is set to false
+\begin{IOWA ONLY}
+\begin{center}
+\begin{tabular}{lll}
+{\bf CLAS * System:} & * = major contribution   &    *** = equal contribution \\
+                     & ** = secondary contribution & **** = minor contribution
+\end{tabular}
+\end{center}
+\end{IOWA ONLY}
+
+%-------------------------------
+\subsection*{Publications}
+%-------------------------------
+\smallskip
+
+%% Notes:
+%
+% We do not to have a \textbf{Publication in Progress} subsection
+% and instead add each publication in progress in the proper subsection below, 
+% with a note that indicates the status of the publication
+% (e.g., {\sf submitted}, {\sf under review}, {\sf accepted with minor revision}, 
+% {\sf accepted}, etc.).}
+%
+% We are add the subsections
+% 
+% - Edited Volumes
+% - Technical Reports
+%
+% Technically, those subsection are already allowed as extensions.
+% The difference with the University template is their current placement
+% before the end.
+
+
+\printbibliography[title={\normalsize Refereed Articles},
+ filter=journalOrConf,
+ notkeyword=electronic,
+ notkeyword=nonref,
+ resetnumbers=true
+]
+
+
+\printbibliography[title={\normalsize Non-Refereed Articles},
+ type=article,
+ keyword=nonref,
+ notkeyword=abstract,
+ notkeyword=electronic,
+ resetnumbers=true
+]
+
+\printbibliography[title={\normalsize Books},
+ type=book,
+ notkeyword=electronic,
+ resetnumbers=true
+]
+
+\printbibliography[title={\normalsize \new{Edited Volumes}},
+ filter=procsOrColls,
+ notkeyword=electronic,
+ resetnumbers=true
+]
+
+\printbibliography[title={\normalsize Refereed Book Chapters},
+ type=incollection,
+ notkeyword=nonref,
+ notkeyword=electronic,
+ resetnumbers=true
+]
+
+\printbibliography[title={\normalsize Book Chapters},
+ type=incollection,
+ keyword=nonref,
+ notkeyword=electronic,
+ resetnumbers=true
+]
+
+% This subsection should contain non-refereed publications that are only 
+% available in electronic form. Examples include edited electronic
+% proceedings and arXiv reports (not associated to a journal publication).
+%
+\printbibliography[title={\normalsize Electronic Publications},
+ keyword=electronic,
+ resetnumbers=true
+]
+
+\printbibliography[title={\normalsize \new{Technical Reports}},
+ type=report,
+ resetnumbers=true
+]
+
+\printbibliography[title={\normalsize Abstracts},
+ keyword=abstract,
+ resetnumbers=true
+]
+
+\printbibliography[title={\normalsize Reviews},
+ keyword=review,
+ resetnumbers=true
+]
+
+
+
+%----------------------
+\subsection*{Software}
+%----------------------
+\smallskip
+
+\begin{tabular}{l@{\quad\ }l} 
+ 2015 -- present
+ & StarExec, multi-community web service for logic solving, \url{www.starexec.org}
+\end{tabular}
+
+\begin{IOWA ONLY}
+%----------------------------------------
+\subsection*{Areas of Research Interest}
+%----------------------------------------
+\smallskip
+
+\begin{itemize} \setlength{\itemsep}{0ex}
+ \item [] Semantics of Programming Languages
+ \item [] Computational Logic
+\end{itemize}
+\end{IOWA ONLY}
+
+%----------------------------------
+\subsection*{Grants and Contracts}
+%----------------------------------
+\smallskip
+
+\begin{itemize}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~
+\item[] \textbf{Current}
+%~~~~~~~~~~~~~~~~~~~~~~~~
+\\[1.3ex]
+\begin{tabular}{l@{\quad\ }p{34em}} 
+ 2017 -- 2021 
+ & \emph{Collaborative Research: CI-SUSTAIN: StarExec: Cross-Community Infrastructure for Logic Solving (CNS-1729603)} \\
+ & Funded by the National Science Foundation. 
+   Investigators: Aaron Stump, Cesare Tinelli, Geoff Sutcliffe (U. Miami). 
+   Iowa portion: \$552,195.
+   \smallskip \\
+ 2015 -- 2021 
+ & \emph{Semantics, Formal Reasoning, and Tool Support for Quantum Programming Solving (AFOSR 14944300)} \\
+ & Funded by the Air Force Office of Sponsored Research (AFOSR). 
+   Investigators: Aaron Stump, Mike Mislove (Tulane), Steve Zdancewic (U. Penn).
+   Iowa portion: \$1,007,034
+\end{tabular}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~
+\item[] \textbf{Completed}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~
+\\[1.3ex]
+\begin{tabular}{l@{\quad\ }p{34em}} 
+ 2015 -- 2019
+ & \emph{Lambda Encodings Reborn (CSF-1524519)} \\
+ & Funded by the National Science Foundation. 
+   Investigator: Aaron Stump
+   Iowa portion: \$468,938.
+   \smallskip \\
+ 2018
+ & \emph{Cedille Support for Ethereum} \\
+ & Funded by the Ethereum Foundation. 
+   Award amount: \$50,194
+   Percent effort: one-time gift 
+   Investigator: Aaron Stump
+   Iowa portion: \$50,194.
+
+\end{tabular}
+
+\end{itemize}
+
+%-----------------------------------------------------------
+\subsection*{Invited Lectures and Conference Presentations}
+%-----------------------------------------------------------
+\smallskip
+
+\begin{itemize}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\item[] \textbf{International --- Keynote Talks}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\\[1.3ex]
+\begin{tabular}{l@{\quad\ }p{34em}} 
+ June 2019 
+ & Workshop on Syntax and Semantics of Low-Level Languages (LOLA),
+   \emph{Rediscovering Constructive Type Theory with Cedille},
+   affiliated with the IEEE Symposium on Logic in Computer Science (LICS)
+   Vancouver, British Columbia, Canada
+   \smallskip 
+\end{tabular}
+
+\end{itemize}
+
+%===================
+\section*{\service}
+%===================
+
+%------------------------
+\subsection*{Profession}
+%------------------------
+
+% Note:
+% We have subsections, for readability
+
+\begin{itemize}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\item[] \textbf{Program Committee Member}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\\[1.3ex]
+\begin{tabular}{l@{\quad\ }p{34em}} 
+  2021 & Logical Frameworks and Meta-Languages: Theory and Practice (LFMTP, international workshop)
+   \\[.5ex]
+ 2020 & ACM Conference on Principles of Programming Languages (POPL)
+ \\[.5ex]
+ 2020 & Formal Structures for Computation and Deduction (FSCD, international conference)
+ \\[.5ex]
+ 2019 & Formal Structures for Computation and Deduction (FSCD)
+ \\[.5ex]
+
+\end{tabular}
+
+\begin{IOWA ONLY}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\item[] \textbf{Journal Reviewer}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\\[1.3ex]
+\begin{tabular}{l@{\quad\ }p{34em}} 
+ 2020 & Logical Methods in Computer Science, 2 articles
+ \\[.5ex]
+ 2019 & Logical Methods in Computer Science, 1 article
+ \\[.5ex]
+\end{tabular}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\item[] \textbf{Conference/Workshop Reviewer}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\\[1.3ex]
+\begin{tabular}{l@{\quad\ }p{34em}} 
+ 2020 & ACM International Conference on Functional Programming (ICFP), member of external review committee
+ \\[.5ex]
+\end{tabular}
+
+\end{IOWA ONLY}
+
+\end{itemize}
+
+
+\begin{IOWA ONLY}
+%------------------------
+\subsection*{Department}
+%------------------------
+
+\begin{tabular}{l@{\quad\ }p{34em}} 
+ 2018 -- 2021 
+ & Graduate Admissions Committee
+ \\[.5ex]
+\end{tabular}
+
+%---------------------
+\subsection*{College}
+%---------------------
+
+\begin{tabular}{l@{\quad\ }p{34em}} 
+ 2019 -- 2020 
+ & Teaching Awards Committee
+\end{tabular}
+
+%------------------------
+\subsection*{University}
+%------------------------
+
+\begin{tabular}{l@{\quad\ }p{34em}} 
+ 2017 -- 2020 
+ & Committee on the Conflict of Interest in Employment
+ \\[.5ex]
+\end{tabular}
+
+
+%----------------------
+\subsection*{Industry}
+%----------------------
+
+\begin{tabular}{l@{\quad\ }p{34em}} 
+ 2019 -- 2021 
+ & Sunshine Cybernetics Inc., Technical Advisor
+ \\[.5ex]
+\end{tabular}
+
+%------------------------
+\subsection*{Outreach}
+%------------------------
+
+\begin{tabular}{l@{\quad\ }p{34em}} 
+ 2019 -- present 
+ & creator of the Iowa Type Theory Commute podcast; 115 episodes, over 27,000 downloads as of October 1, 2021
+ \\[.5ex]
+\end{tabular}
+
+
+\end{IOWA ONLY}
+
+\end{document}
+
+
+
+
+
+
